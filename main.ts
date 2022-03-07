@@ -303,20 +303,21 @@ namespace newland {
   }
 
   /**
-   * @param name savepath; eg: name.mpr
+   * @param name savepath; eg: name.mp4
    */
-  //% blockId=newland_voice block="Newland voice %name"
-  //% group="Basic" weight=95
+  //% blockId=newland_voice block="Newland voice Name%name"
+  //% group="Basic" weight=98
   export function newland_voice(name: string): void {
     let str = `K71 ${name}`
     serial.writeLine(str)
   }
 
+
   /**
    * @param name mp4 to display; eg: name.mp4
    */
-  //% blockId=newland_voice_display block="Newland  voice Display %name"
-  //% group="Basic" weight=94 blockGap=40
+  //% blockId=newland_voice_display block="Newland voice Display Name%name"
+  //% group="Basic" weight=98
   export function newland_voice_display(name: string): void {
     let str = `K72 ${name}`
     serial.writeLine(str)
