@@ -281,25 +281,29 @@ namespace newland {
   //% blockId=newland_screen_direction block="Newland screen Dir%dir"
   //% group="Basic" weight=98
   export function newland_screen_direction(dir: screenDirection): void {
+    serial.readString()
     let str = `K7 ${dir}`
     serial.writeLine(str)
-    basic.pause(100)
+    basic.pause(1000)
   }
 
 
   //% blockId=newland_camera_switch block="Newland camera Dir%dir"
   //% group="Basic" weight=98
   export function newland_camera_switch(dir: cameraDirection): void {
+    serial.readString()
     let str = `K8 ${dir}`
     serial.writeLine(str)
-    basic.pause(100)
+    basic.pause(1000)
   }
 
   //% blockId=newland_clear_display block="Newland newland_clear_display"
   //% group="Basic" weight=88
   export function newland_clear_display(): void {
+    serial.readString()
     let str = `K9`
     serial.writeLine(str)
+    basic.pause(1000)
   }
 
 
