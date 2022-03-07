@@ -16,9 +16,8 @@
     "newland.newland_screen_direction|block": "屏幕方向%dir",
     "newland.newland_camera_switch|block": "摄像头方向%dir",
     "newland.newland_clear_display|block": "清除顯示",
-    "newland.newland_voice|block": "錄製音頻%name",
-    "newland.newland_voice_display|block": "播放音頻%name",
-
+    "newland.newland_voice|block": "錄製音頻 %name",
+    "newland.newland_voice_display|block": "播放音頻 %name",
 
     "newland.newland_track_circle|block": "追蹤圓形 臨界值%th",
     "newland.newland_oncircletrack|block": "追蹤圓形",
