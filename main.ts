@@ -305,7 +305,7 @@ namespace newland {
 
 
   /**
-   * @param name savepath; eg: name.jpg
+   * @param name savepath; eg: name.wav
    */
   //% blockId=newland_screenshot1 block="Newland Screenshot %name"
   //% group="Basic" weight=95
@@ -315,7 +315,7 @@ namespace newland {
   }
 
   /**
-   * @param name jpeg to display; eg: name.jpg
+   * @param name jpeg to display; eg: name.wav
    */
   //% blockId=newland_display1 block="Newland Display %name"
   //% group="Basic" weight=94 blockGap=40
