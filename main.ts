@@ -254,8 +254,8 @@ namespace newland {
   export function newland_init(tx: SerialPin, rx: SerialPin): void {
     serial.redirect(tx, rx, BaudRate.BaudRate115200)
     basic.pause(500)
-    serial.setTxBufferSize(64)
-    serial.setRxBufferSize(64)
+    serial.setTxBufferSize(128)
+    serial.setRxBufferSize(128)
     serial.readString()
     serial.writeString('\n\n')
     // take control of the ext serial port from Newland
@@ -339,7 +339,7 @@ namespace newland {
   //% group="Basic" weight=97
   export function newland_print(t: string, x: number, y: number, d: number = 1000): void {
 
-    let str = `K4 ${x} ${y} ${d} ${t}\n`
+    let str = `K4 ${x} ${y} ${d} ${t}`
     serial.writeLine(str)
   }
 
